@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <StackPane prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="result" prefHeight="46.0" prefWidth="297.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="50.0" text="7" />
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="50.0" text="8" />
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="50.0" text="9" />
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="/" />
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="\%" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="50.0" text="4" />
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="50.0" text="5" />
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="50.0" text="6" />
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="*" />
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="C" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="50.0" text="1" />
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="50.0" text="2" />
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="50.0" text="3" />
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="-" />
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="100.0" text="0" />
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="50.0" text="." />
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="+" />
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="=" />
+         </children>
+      </HBox>
+      
+   </children>
+</VBox>
